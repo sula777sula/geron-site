@@ -1,5 +1,170 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Black.ttf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.ttf");
+  font-weight: 700;
+}
 body {
-  background-color: red;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+}
+
+input[type=text] {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+form {
+  background-color: #ffffff;
+  padding: 15px 20px 25px 20px;
+  border: 1px solid #e3e3e3;
+  border-radius: 8px;
+}
+
+input[type=text] {
+  margin-left: -11px;
+  width: 100%;
+  border: 1px solid #e3e3e3;
+  border-radius: 6px;
+  padding: 7px 11px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 10px;
+}
+
+.form-container {
+  margin: 0 11px;
+}
+
+.btn {
+  width: 100%;
+  border: 1px solid #ff3d00;
+  color: #ff3d00;
+  border-radius: 5px;
+  padding: 10px 0;
+  font-size: 14px;
+  text-align: center;
+  font-family: "Montserrat";
+  font-weight: 900;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.btn.second {
+  width: 100%;
+  border: 1px solid #ff3d00;
+  color: #ff3d00;
+  border-radius: 5px;
+  padding: 10px 0;
+  font-size: 14px;
+  text-align: center;
+  font-family: "Montserrat";
+  font-weight: 900;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ff3d00;
+  color: #ffffff;
+}
+
+.btn.second:hover {
+  background-color: #0085ff;
+  color: #ffffff;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Montserrat";
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+h3 {
+  font-size: 14px;
+}
+
+h4 {
+  font-size: 12px;
+}
+
+p {
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
+.cover img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.cover {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+}
+
+.cover.rectangle {
+  width: 100%;
+  padding-top: 64.4567219153%;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 0 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
