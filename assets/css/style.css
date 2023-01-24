@@ -91,8 +91,11 @@ input[type=text] {
   transition: 0.5s;
   cursor: pointer;
 }
-
-.btn.second {
+.btn :hover {
+  background-color: #ff3d00;
+  color: #ffffff;
+}
+.btn .second {
   width: 100%;
   border: 1px solid #ff3d00;
   color: #ff3d00;
@@ -105,18 +108,15 @@ input[type=text] {
   transition: 0.5s;
   cursor: pointer;
 }
-
-.btn:hover {
-  background-color: #ff3d00;
-  color: #ffffff;
-}
-
-.btn.second:hover {
+.btn .second :hover {
   background-color: #0085ff;
   color: #ffffff;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: "Montserrat";
   font-weight: 900;
 }
@@ -142,6 +142,11 @@ p {
   font-weight: 400;
 }
 
+.cover {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+}
 .cover img {
   position: absolute;
   top: 0;
@@ -149,14 +154,7 @@ p {
   width: 100%;
   height: 100%;
 }
-
-.cover {
-  position: relative;
-  width: 100%;
-  padding-top: 100%;
-}
-
-.cover.rectangle {
+.cover .rectangle {
   width: 100%;
   padding-top: 64.4567219153%;
 }
@@ -165,6 +163,11 @@ p {
   margin: 0 auto;
   max-width: 1100px;
   padding: 0 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */

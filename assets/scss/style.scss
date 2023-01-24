@@ -1,53 +1,20 @@
 @import "fonts";
 @import "reset";
+@import "colors";
+@import "mixin";
 
-$main: #ff3d00;
-$second: #0085ff;
-$black: #202020;
-$stroke: #e3e3e3;
-$placeholder: #808080;
-$back: #f7f7f7;
-$white:#ffffff;
-
-@mixin font($size) {
-  font-family: "Montserrat";
-  font-weight: $size;
-}
-
-@mixin btn($color) {
-  width: 100%;
-  border: 1px solid $main;
-  color: $main;
-  border-radius: 5px;
-  padding: 10px 0;
-  font-size: 14px;
-  text-align: center;
-  @include font(900);
-  transition: 0.5s;
-  cursor: pointer;
-}
-
-@mixin activeBtn($color) {
-  background-color: $color;
-  color:$white;
-  
-}
-@mixin cover($height){
-  width: 100%;
-  padding-top: $height;
-}
-
-body{
+body {
   background-color: $back;
 }
 
-form{
+form {
   background-color: $white;
   padding: 15px 20px 25px 20px;
   border: 1px solid $stroke;
   border-radius: 8px;
 }
-input[type=text]{
+
+input[type="text"] {
   margin-left: -11px;
   width: 100%;
   border: 1px solid $stroke;
@@ -56,64 +23,68 @@ input[type=text]{
   @include font(700);
   font-size: 10px;
 }
-.form-container{
+
+.form-container {
   margin: 0 11px;
 }
 
-.btn{
+.btn {
   @include btn($main);
-}
-.btn.second {
-  @include btn($second);
-}
-.btn:hover{
-  @include activeBtn($main);
+  :hover {
+    @include activeBtn($main);
+  }
+  .second {
+    @include btn($second);
+    :hover {
+      @include activeBtn($second);
+    }
+  }
 }
 
-.btn.second:hover {
-  @include activeBtn($second);
-}
-
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   @include font(900);
 }
-h1{
+h1 {
   font-size: 20px;
 }
-h2{
+h2 {
   font-size: 16px;
 }
-h3{
+h3 {
   font-size: 14px;
 }
-h4{
+h4 {
   font-size: 12px;
 }
-p{
+p {
   @include font(400);
-}
-.cover img{
-  position: absolute;
-  top: 0;
-  left: 0;
-  
-  width: 100%;
-  height: 100%;
 }
 
 .cover {
   position: relative;
   @include cover(100%);
-  
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .rectangle {
+    @include cover(calc(350 / (543 / 100)) * 1%);
+  }
 }
 
-.cover.rectangle {
-  @include cover(350 / (543 / 100) * 1%);
-
-}
-
-.wrapper{
+.wrapper {
   margin: 0 auto;
   max-width: 1100px;
   padding: 0 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
 }
