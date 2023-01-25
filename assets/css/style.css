@@ -63,7 +63,7 @@ form {
   border-radius: 8px;
 }
 
-input[type=text] {
+input[type=text], .select {
   margin-left: -11px;
   width: 100%;
   border: 1px solid #e3e3e3;
@@ -72,6 +72,17 @@ input[type=text] {
   font-family: "Montserrat";
   font-weight: 700;
   font-size: 10px;
+}
+
+input[type=text]:placeholder-shown, .select {
+  color: #808080;
+}
+
+.select {
+  cursor: pointer;
+}
+.select .active {
+  color: #202020;
 }
 
 .form-container {
@@ -178,6 +189,10 @@ p.context {
 }
 
 svg {
+  cursor: pointer;
+}
+
+svg {
   fill: #202020;
   transition: 0.4s;
 }
@@ -246,6 +261,25 @@ header .burger-menu .line {
 }
 .cards h2 {
   margin: 10px;
+}
+
+.main-form {
+  width: 30%;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.select {
+  margin-bottom: 30px;
+}
+
+input {
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
