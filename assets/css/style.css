@@ -80,8 +80,8 @@ input[type=text] {
 
 .btn {
   width: 100%;
-  border: 1px solid #ff3d00;
-  color: #ff3d00;
+  border: 1px solid #0085ff;
+  color: #0085ff;
   border-radius: 5px;
   padding: 10px 0;
   font-size: 14px;
@@ -91,14 +91,14 @@ input[type=text] {
   transition: 0.5s;
   cursor: pointer;
 }
-.btn :hover {
+.btn:hover {
   background-color: #ff3d00;
   color: #ffffff;
 }
-.btn .second {
+.btn.second {
   width: 100%;
-  border: 1px solid #ff3d00;
-  color: #ff3d00;
+  border: 1px solid #0085ff;
+  color: #0085ff;
   border-radius: 5px;
   padding: 10px 0;
   font-size: 14px;
@@ -108,7 +108,7 @@ input[type=text] {
   transition: 0.5s;
   cursor: pointer;
 }
-.btn .second :hover {
+.btn.second:hover {
   background-color: #0085ff;
   color: #ffffff;
 }
@@ -140,6 +140,13 @@ h4 {
 p {
   font-family: "Montserrat";
   font-weight: 400;
+  font-size: 12px;
+  margin: 10px;
+}
+p.context {
+  font-weight: 400;
+  font-size: 10px;
+  color: #808080;
 }
 
 .cover {
@@ -147,14 +154,14 @@ p {
   width: 100%;
   padding-top: 100%;
 }
-.cover img {
+.cover img, .cover-content {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-.cover .rectangle {
+.cover.rectangle {
   width: 100%;
   padding-top: 64.4567219153%;
 }
@@ -168,6 +175,77 @@ p {
 .container {
   display: flex;
   justify-content: space-between;
+}
+
+svg {
+  fill: #202020;
+  transition: 0.4s;
+}
+svg :hover {
+  transition: 0.4s;
+  fill: #ff3d00;
+}
+
+.card {
+  background: #ffffff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+.card img {
+  border-radius: 8px 8px 0 0;
+}
+
+section {
+  margin-bottom: 80px;
+}
+
+header {
+  padding: 36px 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+header .burger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+header .burger-menu .line {
+  height: 2px;
+  width: 18px;
+  background-color: #202020;
+  margin: 3px;
+}
+
+.main {
+  margin-top: 10px;
+}
+.main-container {
+  width: 49%;
+  background-color: #0085ff;
+  border-radius: 8px;
+}
+.main-container img {
+  border-radius: 8px;
+}
+.main-container .cover-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+}
+.main-container h1 {
+  margin: 35px;
+}
+.main-container h1:first-child {
+  margin-bottom: 0;
+}
+
+.cards .card {
+  width: 18%;
+}
+.cards h2 {
+  margin: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

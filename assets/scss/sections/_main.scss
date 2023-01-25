@@ -1,0 +1,25 @@
+.main {
+  margin-top: 10px;
+
+  &-container {
+    width: 49%;
+    background-color: $second;
+    border-radius: 8px;
+
+    img {
+      border-radius: 8px;
+    }
+    .cover-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color:$white ;
+    }
+    h1 { 
+      margin: 35px;
+      &:first-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
