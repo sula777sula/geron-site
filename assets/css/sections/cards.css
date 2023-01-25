@@ -4,5 +4,8 @@
 .cards h2 {
   margin: 10px;
 }
+.cards .btn {
+  margin-bottom: 5px;
+}
 
 /*# sourceMappingURL=cards.css.map */

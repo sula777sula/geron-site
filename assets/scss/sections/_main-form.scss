@@ -1,15 +1,57 @@
 .main-form {
   width: 30%;
-    margin: 0 auto;
-    margin-bottom: 80px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  h1 {
+    text-align: center;
+    margin-bottom: 25px;
+  }
 }
-h1{
-  text-align: center;
-  margin-bottom: 25px;
-}
-.select {
-margin-bottom: 30px;
-}
+
 input {
   margin-bottom: 20px;
- }
+}
+
+.select {
+  display: flex;
+  position: relative;
+  margin-bottom: 30px;
+  :hover {
+    .pick {
+      svg {
+        fill: $main;
+      }
+    }
+    .options {
+      display: block;
+    }
+  }
+  .pick {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0;
+    right: 0;
+    padding: 0 14px;
+    height: 100%;
+  }
+}
+
+.options {
+  display: none;
+  width: 100%;
+  background-color: $white;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  transform: translate(0, 100%);
+  .opt {
+    padding: 10px 11px;
+    transition: 0.4s;
+    color: $black;
+    &:hover {
+      background-color: $main;
+      color: white;
+    }
+  }
+}

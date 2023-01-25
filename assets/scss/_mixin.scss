@@ -1,8 +1,8 @@
 
 @mixin btn($color) {
   width: 100%;
-  border: 1px solid $second;
-  color: $second;
+  border: 1px solid $color;
+  color: $color;
   border-radius: 5px;
   padding: 10px 0;
   font-size: 14px;

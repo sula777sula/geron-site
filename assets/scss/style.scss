@@ -13,6 +13,10 @@ form {
   border: 1px solid $stroke;
   border-radius: 8px;
 }
+.options {
+  border: 1px solid $stroke;
+  border-radius: 6px;
+}
 
 input[type="text"], .select {
   margin-left: -11px;
@@ -134,3 +138,4 @@ section {
 @import "sections/main";
 @import "sections/cards";
 @import "sections/main-form";
+@import "sections/footer";

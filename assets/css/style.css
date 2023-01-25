@@ -63,6 +63,11 @@ form {
   border-radius: 8px;
 }
 
+.options {
+  border: 1px solid #e3e3e3;
+  border-radius: 6px;
+}
+
 input[type=text], .select {
   margin-left: -11px;
   width: 100%;
@@ -91,8 +96,8 @@ input[type=text]:placeholder-shown, .select {
 
 .btn {
   width: 100%;
-  border: 1px solid #0085ff;
-  color: #0085ff;
+  border: 1px solid #ff3d00;
+  color: #ff3d00;
   border-radius: 5px;
   padding: 10px 0;
   font-size: 14px;
@@ -262,24 +267,77 @@ header .burger-menu .line {
 .cards h2 {
   margin: 10px;
 }
+.cards .btn {
+  margin-bottom: 5px;
+}
 
 .main-form {
   width: 30%;
   margin: 0 auto;
   margin-bottom: 80px;
 }
-
-h1 {
+.main-form h1 {
   text-align: center;
   margin-bottom: 25px;
 }
 
-.select {
-  margin-bottom: 30px;
-}
-
 input {
   margin-bottom: 20px;
+}
+
+.select {
+  display: flex;
+  position: relative;
+  margin-bottom: 30px;
+}
+.select :hover .pick svg {
+  fill: #ff3d00;
+}
+.select :hover .options {
+  display: block;
+}
+.select .pick {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 0;
+  right: 0;
+  padding: 0 14px;
+  height: 100%;
+}
+
+.options {
+  display: none;
+  width: 100%;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  transform: translate(0, 100%);
+}
+.options .opt {
+  padding: 10px 11px;
+  transition: 0.4s;
+  color: #202020;
+}
+.options .opt:hover {
+  background-color: #ff3d00;
+  color: white;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #202020;
+  margin-bottom: 100px;
+  padding: 40px 10px;
+}
+footer p {
+  color: #ffffff;
+  line-height: 15px;
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
